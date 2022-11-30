@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        // Task1 start
+        let arrayimiz = [30, 20, 16, 9, 35, 22, 58]
+        let myreducer = (a, b) => a + b;
+        let toplami = arrayimiz.reduce(myreducer)
+        let sayi = arrayimiz.length;
+        let edediorta = toplami / sayi
+        console.log(edediorta);
+
+        // Task1 end
+
+
+        // Task2 start
+
+        let arrayimiki = [1, 5, 2, 7]
+        arrayimiki.push(11)
+        console.log(arrayimiki);
+
+        // Task2 end
+
+        // Task 3 start
+
+        let salaam = "Salam Necesen";
+        let say = 0;
+        function Nlerim() {
+            for (let i = 0; i < salaam.length; i++) {
+                if (salaam[i] == "n" && salaam[i] == "N") {
+                    say++
+                }
+            }
+            return say;
+        }
+        console.log(salaam);
+
+        // Task3 end
+
+        // Task4 start
+
+        let soz = "Murad"
+        let saylari = 0;
+        let boyukherf = 0;
+        let kicikherf = 0;
+        let herfcemi = (boyukherf + kicikherf);
+
+        function Herfler() {
+            for (let i = 0; i < soz.length; i++) {
+                if (soz[i] == toUpperCase && soz[i] == toLowerCase) {
+                    saylari++
+                }
+                else {
+                    console.log("Tapilmadi..");
+                }
+
+            }
+            return saylari;
+
+        }
+        console.log(soz);
+
+        // Task4 end
+
+    </script>
+</body>
+
+</html>
